@@ -14,6 +14,7 @@
 		{
 			"name":"Scene",
 			"nodes":[
+				0,
 				1
 			]
 		}
@@ -21,49 +22,44 @@
 	"nodes":[
 		{
 			"mesh":0,
-			"name":"defaultobject",
-			"rotation":[
-				-0.5,
-				-0.5,
-				-0.5,
-				0.5
-			],
-			"translation":[
-				0,
-				32.44844055175781,
-				0
-			]
+			"name":"Cube"
 		},
 		{
-			"children":[
-				0
-			],
-			"name":"luo_cover.obj"
+			"mesh":1,
+			"name":"luo_cover",
+			"rotation":[
+				0,
+				-0.7071068286895752,
+				0,
+				0.7071068286895752
+			]
 		}
 	],
 	"materials":[
 		{
-			"name":"DefaultMaterial",
+			"doubleSided":true,
+			"name":"Material",
 			"pbrMetallicRoughness":{
 				"baseColorFactor":[
-					0.6000000238418579,
-					0.6000000238418579,
-					0.6000000238418579,
+					0.800000011920929,
+					0.800000011920929,
+					0.800000011920929,
 					1
 				],
-				"metallicFactor":0
+				"metallicFactor":0,
+				"roughnessFactor":0.5
 			}
 		}
 	],
 	"meshes":[
 		{
-			"name":"defaultobject",
+			"name":"Cube",
 			"primitives":[
 				{
 					"attributes":{
 						"POSITION":0,
 						"NORMAL":1,
-						"COLOR_0":2
+						"TEXCOORD_0":2
 					},
 					"extensions":{
 						"KHR_draco_mesh_compression":{
@@ -71,7 +67,7 @@
 							"attributes":{
 								"POSITION":0,
 								"NORMAL":1,
-								"COLOR_0":2
+								"TEXCOORD_0":2
 							}
 						}
 					},
@@ -80,51 +76,111 @@
 					"mode":4
 				}
 			]
+		},
+		{
+			"name":"luo_cover",
+			"primitives":[
+				{
+					"attributes":{
+						"POSITION":4,
+						"NORMAL":5,
+						"COLOR_0":6
+					},
+					"extensions":{
+						"KHR_draco_mesh_compression":{
+							"bufferView":1,
+							"attributes":{
+								"POSITION":0,
+								"NORMAL":1,
+								"COLOR_0":2
+							}
+						}
+					},
+					"indices":7,
+					"mode":4
+				}
+			]
 		}
 	],
 	"accessors":[
 		{
 			"componentType":5126,
-			"count":1499958,
+			"count":24,
 			"max":[
-				22.54603385925293,
-				30.39936065673828,
-				37.74464416503906
+				1,
+				1,
+				1
 			],
 			"min":[
-				-22.769775390625,
-				-30.517871856689453,
-				-37.9938850402832
+				-1,
+				-1,
+				-1
 			],
 			"type":"VEC3"
 		},
 		{
 			"componentType":5126,
-			"count":1499958,
+			"count":24,
 			"type":"VEC3"
 		},
 		{
 			"componentType":5126,
-			"count":1499958,
+			"count":24,
+			"type":"VEC2"
+		},
+		{
+			"componentType":5123,
+			"count":36,
+			"type":"SCALAR"
+		},
+		{
+			"componentType":5126,
+			"count":1499111,
+			"max":[
+				22.171955108642578,
+				70.84991455078125,
+				29.826091766357422
+			],
+			"min":[
+				-22.23847198486328,
+				-4.928913116455078,
+				-29.755014419555664
+			],
 			"type":"VEC3"
+		},
+		{
+			"componentType":5126,
+			"count":1499111,
+			"type":"VEC3"
+		},
+		{
+			"componentType":5123,
+			"count":1499111,
+			"normalized":true,
+			"type":"VEC4"
 		},
 		{
 			"componentType":5125,
-			"count":1499958,
+			"count":1499940,
 			"type":"SCALAR"
 		}
 	],
 	"bufferViews":[
 		{
 			"buffer":0,
-			"byteLength":9181976,
+			"byteLength":263,
 			"byteOffset":0
+		},
+		{
+			"buffer":0,
+			"byteLength":12420806,
+			"byteOffset":264
 		}
 	],
 	"buffers":[
 		{
-			"byteLength":9181976,
-			"uri":"luo_cover2.bin"
+			"byteLength":12421072,
+			"uri":"luo_cover.bin"
 		}
 	]
 }
